@@ -1,0 +1,53 @@
+@startuml
+
+skinparam ArrowColor Black
+
+skinparam control {
+    BackgroundColor Tomato
+    BorderColor Black
+}
+    
+skinparam rectangle {
+    BackgroundColor #Red/DarkRed
+    BackgroundColor<<project>> #Gold/Orange
+    BackgroundColor<<subproject>> Tomato
+    BackgroundColor<<group>> Tomato
+    BackgroundColor<<property>> LightBlue
+}
+
+skinparam file {
+    BackgroundColor<<ticket>> LightGreen
+}
+
+
+
+
+actor "Manager" <<author>> as pm
+actor "Developer" <<assignee>> as Developer
+
+file "ToDo" <<ticket>> as todo
+rectangle "The Next Thing" <<project>> as tnt
+
+rectangle Description <<property>>
+rectangle Status <<property>>
+rectangle Notes <<property>>
+rectangle Files <<property>>
+rectangle "Linked Tickets" <<property>> as Links
+rectangle Dates <<property>>
+rectangle "ID Number" <<property>> as Id #Tomato
+
+
+todo --> pm
+todo --> Developer
+todo --> tnt
+
+todo --> Description
+todo --> Status
+todo --> Notes
+todo --> Files
+todo --> Links
+todo --> Dates
+todo --> Id
+
+
+@enduml

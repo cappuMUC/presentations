@@ -1,0 +1,44 @@
+@startuml
+
+skinparam ArrowColor Black
+
+skinparam control {
+    BackgroundColor Tomato
+    BorderColor Black
+}
+    
+skinparam rectangle {
+    BackgroundColor #Red/DarkRed
+    BackgroundColor<<project>> #Gold/Orange
+    BackgroundColor<<subproject>> Tomato
+    BackgroundColor<<group>> Tomato
+}
+
+skinparam file {
+    BackgroundColor<<ticket>> LightGreen
+}
+
+
+rectangle "The Next Thing" <<project>> as tnt
+
+actor "Manager" as pm
+rectangle "Software Team" <<group>> as sw_team
+
+file "ToDo" <<ticket>> as todo
+file "Info" <<ticket>> as info
+file "Fehler" <<ticket>> as bug
+
+
+tnt *-- todo
+tnt *-- bug
+tnt -- sw_team
+
+tnt -left- pm
+tnt *-- info
+
+sw_team -- Developer
+sw_team -- Engineer
+sw_team -- Tester
+
+
+@enduml

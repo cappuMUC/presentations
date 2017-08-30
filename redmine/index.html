@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Presentation Redmine</title>
+
+	<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="../reveal.js/css/theme/league.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+  </head>
+
+  <body>
+	<div class="reveal">
+	  <div class="slides">
+		<section data-background-image="http://www.redmine.org/attachments/3462/redmine_fluid_icon.png" data-background-size="contain" data-transition="fade">
+		  <h1>Redmine</h1>
+		</section>
+		<section>
+		  <section>
+			<h1>Fakten</h1>
+		  </section>
+		  <section>
+			<ul>
+			  <li>Ein System zum Verwalten von Tickets</li>
+			  <li>Zugriff über den Webbrowser</li>
+			  <li>Stetige Entwicklung seit 2006</li>
+			  <li>Open Source Software (GPLv2)</li>
+			  <li>Hosting über SaaS, oder eigener Server</li>
+			</ul>
+		  </section>
+		  <section>
+			<h2>Einsatzbereiche</h2>
+		  </section>
+		  <section>
+			<ul>
+			  <li>Bugtracker für Software</li>
+			  <li>Projekt Management</li>
+			  <li>Bearbeitung von Support Anfragen</li>
+			  <li>Steuern von Prozessen (Workflows)</li>
+			  <li>Sammeln von Wissen (Knowledgebase)</li>
+			  <li>Lebensläufe von Produkten</li>
+			  <li>...</li>
+			</ul>
+		  </section>
+		</section>
+		<section>
+		  <section>
+			<h3>Ticketsystem</h3>
+			<blockquote>&ldquo;Ein Ticketsytem sammelt, strukturiert und präsentiert Informationen ...&rdquo;</blockquote>
+		  </section>
+		  <section>
+			<h4>Tickets</h4>
+			<img src="img/redmine_tickets.png" />
+		  </section>
+		  <section>
+			<h4>Projekte</h4>
+			<img src="img/redmine_project_model.png" />
+		  </section>
+		</section>
+		<section>
+		  <section>
+			<h1>Features</h1>
+		  </section>
+		  <section>
+			<h4>Tickets</h4>
+			<ul>
+			  <li>Direkter Aufruf über die Ticket Nummer</li>
+			  <li>Unterschiedliche Ansichten (Liste, Gantt, Kalender)</li>
+			  <li>Benutzerdefinierte Filter</li>
+			  <li>Variable Felder &amp; Workflows</li>
+			  <li>Benachrichtigungen via Email (Änderungen, Erinnerungen)</li>
+			  <li>Erstellen und Bearbeiten von Tickets via Email</li>
+			</ul>
+		  </section>
+		  <section>
+			<h4>Reporting & Controlling</h4>
+			<ul>
+			  <li>Sammeln von Tickets in Meileinsteinen (Versionen)</li>
+			  <li>&Uuml;bersicht über Tickets</li>
+			  <li>Zeiterfassung mit Kategorien</li>
+			  <li>Erstellung von Filtern</li>
+			</ul>
+		  </section><section>
+			<h4>Team</h4>
+			<ul>
+			  <li>Wiki zur Dokumentation und Sammlung von Wissen</li>
+			  <li>Foren zur Dokumentation von Diskussionen</li>
+			  <li>News zur Verbreitung von Informationen im Projekt</li>
+			  <li>Browser für Projektarchive (SVN, Git, ...)</li>
+			</ul>
+		  </section>
+		  <section>
+			<h4>Erweitern</h4>
+			<ul class="fragment fade-up">
+			  <li>Mehr Funktionen über Plugins</li>
+			  <li>Anpassungen an UI &Uuml;ber Themes</li>
+			  <li>Zugriff über API</li>
+			  <li>Skripte auf dem Server</li>
+			  <aside class="notes"></aside>
+			</ul>
+		  </section>
+		  <section data-background-image="http://s2.quickmeme.com/img/b5/b53ccd63ec195b1e2a8647f896b2a8a39c9f67df88b13d5cbb63f04cc7e475e6.jpg" data-background-size="contain">
+		  </section>
+		</section>
+		</div>
+	</div>
+
+	<script src="../reveal.js/lib/js/head.min.js"></script>
+	<script src="../reveal.js/js/reveal.js"></script>
+
+	<script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  transition:'convex',
+  showNotes:false,
+  minScale:0.2,
+  maxScale:1.0,
+  dependencies: [
+	{ src: '../reveal.js/plugin/markdown/marked.js' },
+	{ src: '../reveal.js/plugin/markdown/markdown.js' },
+	{ src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+	{ src: '../reveal.js/plugin/notes/notes.js', async: true },
+	{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
+	</script>
+  </body>
+</html>
