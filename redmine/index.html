@@ -25,11 +25,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
   <body>
 	<div class="reveal">
 	  <div class="slides">
-		<section data-background-image="http://www.redmine.org/attachments/3462/redmine_fluid_icon.png" data-background-size="contain" data-transition="fade">
+		<section data-background-image="img/redmine_fluid_icon.png" data-background-size="contain" data-transition="fade">
 		  <h1>Redmine</h1>
 		</section>
 		<section>
-		  <section>
+		  <section data-background-image="img/redmine_fluid_icon_bw.png" data-background-size="contain" data-transition="fade">
 			<h1>Fakten</h1>
 		  </section>
 		  <section>
@@ -38,8 +38,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 			  <li>Zugriff über den Webbrowser</li>
 			  <li>Stetige Entwicklung seit 2006</li>
 			  <li>Open Source Software (GPLv2)</li>
-			  <li>Hosting über SaaS, oder eigener Server</li>
+			  <li>Hosting als SaaS, oder eigener Server</li>
 			</ul>
+			<img class="fragment" src="img/redmineup_users.png" />
 		  </section>
 		  <section>
 			<h2>Einsatzbereiche</h2>
@@ -71,14 +72,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 		  </section>
 		</section>
 		<section>
-		  <section>
+		  <section data-background-image="img/redmine_fluid_icon_bw.png" data-background-size="contain" data-transition="fade">
 			<h1>Features</h1>
 		  </section>
 		  <section>
 			<h4>Tickets</h4>
 			<ul>
 			  <li>Direkter Aufruf über die Ticket Nummer</li>
-			  <li>Unterschiedliche Ansichten (Liste, Gantt, Kalender)</li>
 			  <li>Benutzerdefinierte Filter</li>
 			  <li>Variable Felder &amp; Workflows</li>
 			  <li>Benachrichtigungen via Email (Änderungen, Erinnerungen)</li>
@@ -88,25 +88,29 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 		  <section>
 			<h4>Reporting & Controlling</h4>
 			<ul>
+			  <li>Unterschiedliche Ansichten (Liste, Gantt, Kalender)</li>
+			  <li>Gefilterte &Uuml;bersicht der Tickets</li>
 			  <li>Sammeln von Tickets in Meileinsteinen (Versionen)</li>
-			  <li>&Uuml;bersicht über Tickets</li>
-			  <li>Zeiterfassung mit Kategorien</li>
-			  <li>Erstellung von Filtern</li>
+			  <li>Zeiterfassung</li>
 			</ul>
 		  </section><section>
 			<h4>Team</h4>
 			<ul>
 			  <li>Wiki zur Dokumentation und Sammlung von Wissen</li>
+			  <li>Zentraler Austausch von Dokumenten und Dateien</li>
 			  <li>Foren zur Dokumentation von Diskussionen</li>
 			  <li>News zur Verbreitung von Informationen im Projekt</li>
 			  <li>Browser für Projektarchive (SVN, Git, ...)</li>
 			</ul>
+			<p class="fragment">
+			<strong>Fast jedes Objekt l&auml;sst sich referenzieren...</strong>
+			</p>
 		  </section>
 		  <section>
 			<h4>Erweitern</h4>
 			<ul class="fragment fade-up">
 			  <li>Mehr Funktionen über Plugins</li>
-			  <li>Anpassungen an UI &Uuml;ber Themes</li>
+			  <li>Anpassungen an UI &uuml;ber Themes</li>
 			  <li>Zugriff über API</li>
 			  <li>Skripte auf dem Server</li>
 			  <aside class="notes"></aside>
