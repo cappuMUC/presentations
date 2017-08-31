@@ -1,12 +1,21 @@
 @startuml
 
-skinparam ArrowColor Black
+
+skinparam ArrowColor White
+skinparam BackgroundColor #LightGrey/Grey
+
+skinparam actor {
+    BorderColor Black
+    BackgroundColor<<author>> Tomato
+    BackgroundColor<<assignee>> DeepSkyBlue
+    
+}
 
 skinparam control {
     BackgroundColor Tomato
     BorderColor Black
 }
-    
+
 skinparam rectangle {
     BackgroundColor #Red/DarkRed
     BackgroundColor<<project>> #Gold/Orange
@@ -48,6 +57,8 @@ todo --> Files
 todo --> Links
 todo --> Dates
 todo --> Id
+
+
 
 
 @enduml
