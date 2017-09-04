@@ -1,8 +1,9 @@
 @startuml
 
+scale 1.2
 
-skinparam ArrowColor White
-skinparam BackgroundColor #LightGrey/Grey
+skinparam ArrowColor Black
+skinparam BackgroundColor #White/LightGrey
 
 skinparam actor {
     BorderColor Black
@@ -17,10 +18,10 @@ skinparam control {
 }
 
 skinparam rectangle {
-    BackgroundColor #Red/DarkRed
-    BackgroundColor<<project>> #Gold/Orange
-    BackgroundColor<<subproject>> Tomato
-    BackgroundColor<<group>> Tomato
+    BackgroundColor #MistyRose
+    BackgroundColor<<project>> PHYSICAL
+    BackgroundColor<<subproject>> PaleGreen
+    BackgroundColor<<group>> Thistle
     BackgroundColor<<property>> LightBlue
 }
 
